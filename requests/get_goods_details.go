@@ -120,7 +120,7 @@ type GoodsDetail struct {
 	// DsrPercent 描述同行比
 	DsrPercent float64 `json:"dsrPercent,omitempty"`
 	// ShipScore 物流服务
-	ShipScore float64 `json:"shipScore,omtempty"`
+	ShipScore float64 `json:"shipScore,omitempty"`
 	// ShipPercent 物流同行比
 	ShipPercent float64 `json:"shipPercent,omitempty"`
 	// ServiceScore 服务态度
