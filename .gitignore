@@ -23,7 +23,7 @@
  *.test
  *.prof
  
- .DS_Store
- test/
- .vim
+.DS_Store
+test/
+.vim
 dist/
