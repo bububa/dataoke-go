@@ -145,6 +145,10 @@ type TbkItem struct {
 	LevelOneCategoryName string `json:"level_one_category_name,omitempty"`
 	// LevelOneCategoryID 商品信息-一级类目ID
 	LevelOneCategoryID uint64 `json:"level_one_category_id,omitempty"`
+	// CaregoryName 商品信息-叶子类目名称
+	CategoryName string `json:"category_name,omitempty"`
+	// CategoryID 商品信息-叶子类目id
+	CategoryID uint64 `json:"category_id,omitempty"`
 	// ShortTitle 商品信息-商品短标题
 	ShortTitle string `json:"short_title,omitempty"`
 	// WhiteImage 商品信息-商品白底图
@@ -155,6 +159,10 @@ type TbkItem struct {
 	CouponAmount util.Int64 `json:"coupon_amount,omitempty"`
 	// ItemDescription 商品信息-宝贝描述(推荐理由)
 	ItemDescription string `json:"item_description,omitempty"`
+	// ItemURL uland.taobao.com
+	ItemURL string `json:"item_url,omitempty"`
+	// URL s.click.taobao
+	URL string `json:"url,omitempty"`
 	// NumIid 商品信息-宝贝id
 	NumIid string `json:"num_iid,omitempty"`
 	// ItemID 商品信息-宝贝id
