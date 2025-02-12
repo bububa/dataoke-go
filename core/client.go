@@ -5,7 +5,7 @@ import (
 	"crypto/md5"
 	"encoding/hex"
 	"encoding/json"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 	"net/url"
@@ -99,7 +99,7 @@ func (c *Client) fetch(httpReq *http.Request, resp interface{}) error {
 	defer PutResponse(ret)
 	var decoder *json.Decoder
 	if c.debug {
-		body, err := ioutil.ReadAll(httpResp.Body)
+		body, err := io.ReadAll(httpResp.Body)
 		if err != nil {
 			return err
 		}
